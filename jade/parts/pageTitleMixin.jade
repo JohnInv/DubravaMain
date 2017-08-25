@@ -1,0 +1,12 @@
+mixin pageTitle (pageName , pageContent)
+  .container
+    section.intro.catalog
+      .row
+        .col-xs-12
+          .intro__head-wrap
+            h1.section__tittle #{pageName}
+            span.intro__pageName
+              a(href="#") Главная /
+            span.intro__pageContent &nbsp #{pageContent}
+    hr
+

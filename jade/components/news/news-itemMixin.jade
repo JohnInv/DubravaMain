@@ -1,0 +1,10 @@
+mixin newsItem( imgSrc ,info , date , text )
+  .col-md-3.col-xs-6
+    .news__item
+      img(src="#{imgSrc}" alt="Свежее мясо")
+      .news__item--info
+        a(href="#") #{info}
+    .new-item--text
+      span.date #{date}
+      a(href="#").text #{text}
+

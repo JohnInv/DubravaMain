@@ -1,0 +1,86 @@
+
+div.filter__price-slider
+  #amount,
+  #amount-2
+    display: inline-block!important
+    color: #000000!important
+    margin-bottom: 15px
+    width: 49%
+    text-align: left
+    font-family: $base-font
+    font-size: 14px
+  #amount-2
+    text-align: right
+    position: relative
+    left: 10px
+  p
+    text-align: left
+    label
+      display: block
+      font-size: 12px
+      font-family: $base-font-bold
+      margin-bottom: 28px
+
+#slider-range
+  margin-left: 5px!important
+  width: 95%!important
+  border: none!important
+
+
+.ui-slider
+  position: relative
+  .ui-slider-handle
+    position: absolute
+    z-index: 2
+    width: 27px!important
+    height: 21px!important
+    background-color: $main-light-color!important
+    box-shadow: 0 2px 2px 0px #2d8787!important
+    &:before
+      content: "|||"
+      position: absolute
+      left: 30%
+      color: #ffffff
+      font-size: 14px
+      text-align: center
+      vertical-align: middle
+    cursor: pointer
+  .ui-slider-range
+    position: absolute
+    z-index: 1
+    font-size: .7em
+    display: block
+    border: 0
+    overflow: hidden
+
+
+
+.ui-slider-horizontal
+  height: 7px!important
+  .ui-slider-handle
+    top: -9px!important
+    margin-left: -6px
+  .ui-slider-range
+    top: 0
+    height: 100%
+  .ui-slider-range-min
+    left: 0
+  .ui-slider-range-max
+    right: 0
+
+
+
+.ui-widget-content
+  border: 1px solid #D4D4D4
+  background: #fff
+
+
+.ui-widget-header
+  border: 1px solid #D4D4D4
+  background: #f00
+
+
+.ui-corner-all
+  -moz-border-radius: 4px
+  -webkit-border-radius: 4px
+  border-radius: 4px

@@ -1,0 +1,32 @@
+section.orders
+  .short-info
+    position: relative
+    hr
+      margin: 0
+    ul.short-info
+      li
+        display: inline-block
+        color: $main-light-color
+        font-family: $base-font
+        font-size: 14px
+        margin-right: 40px
+        padding: 20px 0 15px 20px
+        &:last-child
+          margin-right: 0
+      .order-products
+        display: none
+        padding: 5px 49px 10px 19px
+        hr
+          display: none
+
+
+    span.showDetails
+      position: absolute
+      background-image: url("../images/toggle-arrow.png")
+      background-repeat: no-repeat
+      width: 11px
+      height: 7px
+      right: 10px
+      top: 50%
+      &:hover
+        cursor: pointer

@@ -1,0 +1,32 @@
+body header
+	background-color: $main-light-color
+
+header
+	.header__main
+		display: block
+		padding: 20px 0 15px
+		.logo
+			display: inline-block
+			img.header__logo
+				max-width: 174px
+				height: auto
+		.search-icons
+			text-align: right
+			&:hover
+				cursor: pointer
+			a
+				display: inline-block
+				position: relative
+				&:first-child
+					top: -8px
+					left: -15px
+
+
+
+@media only screen and (max-width: $screen-sm)
+	header
+		.header__main
+			.logo
+				display: none
+
+

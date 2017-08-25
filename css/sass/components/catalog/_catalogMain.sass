@@ -1,0 +1,47 @@
+main.catalog
+  text-align: center
+  margin: 0
+  overflow-y: hidden
+  .product
+    display: inline-block
+    margin-bottom: 50px
+
+
+@media only screen and (max-width: 991px)
+  main.catalog
+    .product
+      max-width: 49%
+
+
+@media only screen and (max-width: 767px)
+  section.filters
+    display: none
+  .catalogNav
+    display: none
+  main
+    .sortBy
+     width: 50%
+    .filter--hidden
+      display: inline-block
+      text-align: left
+      width: 49%
+      span
+        text-decoration: underline
+        font-family: $base-font-bold
+        color: $main-light-color
+        font-size: 16px
+        &:hover
+          cursor: pointer
+          color: $main-darker-color
+
+
+@media only screen  and (max-width: 450px)
+  main
+    .filter--hidden
+      width: 45%
+
+
+@media only screen  and (max-width: 387px)
+  main.catalog
+    .product
+      max-width: 50%

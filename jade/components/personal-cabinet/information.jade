@@ -1,0 +1,48 @@
+section.information.section-tab#information
+  .row
+    .col-xs-12
+      span.remind
+        i.fa.fa-exclamation-circle(aria-hidden="true")
+        | Пожалуйста, не забывайте обновлять личную информацию в случае любых изменений.
+
+  .row
+    .col-md-6.col-xs-12
+      .subscribeForm-wrap
+        form.subscribe.form(action='#', method='POST', data-form='subscribe')
+          label(for="name" class="required") Имя:
+          input.subscribe__input.form-control(type='text', name='name', id="name" placeholder='Иван', required)
+          label(for="secondName" class="required") Фамилия:
+          input.subscribe__input.form-control(type='text', name='secondName', id="secondName" placeholder='Иванов:', required)
+          label(for="email") E-mail:
+          input.subscribe__input.form-control(type='email', name='email', id="email" placeholder='Ivan@gmail.com:', required)
+          span.intro Пол:
+            .state
+              input.subscribe__input.form-control(type="radio", name="gender" value="male" id="male")
+              label(for="male" class="radio-check")
+              label(for="male" class="radio") Мужской
+              input.subscribe__input.form-control(type="radio", name="gender" value="female" id="female")
+              label(for="female" class="radio-check")
+              label(for="female" class="radio radio--last" ) Женский
+          include date
+          hr
+          input(type="checkbox" id="subscribe" class="subscribe")
+          label(for="subscribe") Подписаться на нашу рассылку!
+          input(type="checkbox" id="subscribe--partners" class="subscribe")
+          label(for="subscribe--partners" class="subscribe--last") Получать специальные предложения от наших партнеров
+          hr
+          button.btn(type='submit', name='save') Сохранить
+          span.required
+            span.star *
+            | &nbsp — отмеченные поля
+            br
+            | заполняются обязательно
+
+    .col-md-6.col-xs-12
+      form.subscribe.form(action='#', method='POST', data-form='subscribe')
+        label(for="name") Текущий Пароль
+        input.subscribe__input.form-control(type='password', name='password', id="password" placeholder='', required)
+        label(for="name") Новый пароль
+        input.subscribe__input.form-control(type='password', name='password-new_1', id="password-new_1" placeholder='', required)
+        label(for="name") Новый пароль еще раз
+        input.subscribe__input.form-control(type='password', name='password-new_2', id="password-new_2" placeholder='', required)
+        button.btn(type="submit" , name="save") Сохранить

@@ -1,0 +1,63 @@
+main
+	overflow-x: hidden
+	.product
+		text-align: center
+		padding-bottom: 22px
+		&:focus 
+			outline: none
+		img
+			margin-bottom: 10px
+			max-width: 100%
+			height: auto
+		a.product__descr
+			color: #000
+			font-size: 18px
+			font-family: $base-font
+			display: block
+			text-decoration: underline
+			margin-bottom: 10px
+			&:active,
+			&:focus
+				outline: none
+		span.product__name
+			display: block
+			font-size: 12px
+			font-family: $base-font-bold
+			text-decoration: underline
+			color: $main-light-color
+			margin-bottom: 25px
+		span.product__stock
+			display: block
+			text-decoration: line-through
+			font-size: 12px
+			font-family: $base-font
+			color: #999999
+			margin-bottom: 7px
+			min-height: 12px
+		h3.product__price
+			font-family: $base-font
+			font-size: 24px
+			display: inline-block
+		span.product__weight
+			font-family: $base-font
+			font-size: 14px
+
+#productsSlider
+	position: relative
+	img.LeftArrow
+		position: absolute
+		left: -5%
+		top: 30%
+	img.RightArrow
+		position: absolute
+		top: 30%
+		right: -5%
+ 
+
+
+@media only screen and (max-width: 378px)
+	main
+		overflow-x: hidden
+		.product
+			h4.product__descr
+				min-height: 40px

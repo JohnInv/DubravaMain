@@ -1,0 +1,68 @@
+include mixins/order-productMixin
+include mixins/order-short-infoMixin
+
+section.orders#orders
+  .row
+    .col-xs-12
+      ul.order
+        li Заказ
+          span 11132165
+        li Дата
+          span 19.02.2016
+        li Сумма
+          span 68 063 руб
+        li Оплата
+          span Наличными при получени
+        li Статус
+          span Выполнен
+        hr
+
+  .order-line
+    .row
+      .col-md-6.col-xs-12
+        .order-info
+          h1.order__info Заказ № 11132165
+          span.reciver Получатель:
+            span Виталий Коститинопольский
+          span.adress Адрес:
+            span г. Москва д. 156 кв. 7
+          span.phone Моб. Телефон:
+            span 098-765-43-21
+          span.delivery Доставка:
+            span Курьером
+          span.price Оплата:
+            span Наличными при получении
+          span.comment Комментарий к заказу:
+            span Быстрее, пожалуйста
+
+          .status
+            h1.status-name Статус Заказа
+            span.status-info 19.02.2016 - В процессе подготовки
+            span.status-info 20.02.2016 - Ожидание оплаты
+            span.status-info 21.02.2016 - Отправка на 22.10
+            span.status-info 25.02.2016 - Заказ выполнен
+
+
+      .col-md-6.col-xs-12
+        .order-products
+          h1 Ваш Заказ
+          +orderProduct("Карбонад без кости" , "(код: 68968988)" , "900 руб / 1кг" , "35000 руб")
+          +orderProduct("Карбонад без кости" , "(код: 68968988)" , "900 руб / 1кг" , "35000 руб")
+          +orderProduct("Карбонад без кости" , "(код: 68968988)" , "900 руб / 1кг" , "35000 руб")
+
+
+          .final_price
+            span Сумма
+              span.inner 70000 руб
+            span Стоимость доставки
+              span.inner 50 руб
+            span.final_price--total Итого
+              span.price.inner 11900 руб
+
+  .row
+    .col-xs-12
+      +shortInfo("6892532" , "15.03.2016" , "568 руб" , "Наличными при получении" , "Ожидание оплаты")
+      +shortInfo("6892532" , "15.03.2016" , "568 руб" , "Наличными при получении" , "Ожидание оплаты")
+      +shortInfo("6892532" , "15.03.2016" , "568 руб" , "Наличными при получении" , "Ожидание оплаты")
+
+

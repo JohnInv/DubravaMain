@@ -1,0 +1,46 @@
+.row--promo
+	text-align: center
+	.promo-item:last-child
+		padding-right: 0
+	.promo-item
+		padding-right: 33px
+		max-width: 100%
+		max-height: 270px
+		display: inline-block
+		text-align: center
+		position: relative
+		margin-bottom: 22px
+		img
+			width: 100%
+			height: auto
+		.promo-item__info
+			max-width: 100%
+			position: absolute
+			left: 0
+			bottom: 3px
+			padding: 20px 40px 18px 22px
+			color: #FFFFFF
+			background-color: #061a10
+			background-color: rgba(6, 26, 16 , .66)
+			h2
+				overflow: hidden
+				text-overflow: ellipsis
+				white-space: nowrap
+				border-bottom: 3px solid $main-light-color
+				font-size: 22px
+				font-family: $base-font
+				margin-bottom: 7px
+			span.price
+				font-family: $base-font-bold
+				font-size: 18px
+
+
+@media only screen and (max-width: 525px)
+	.row--promo
+		.promo-item
+			.promo-item__info
+				padding: 15px 25px 15px 16px
+				h1
+					font-size: 18px
+				span.price
+					font-size: 16px

@@ -1,0 +1,210 @@
+section.information
+  padding-bottom: 1100px
+  form
+    background-color: #f4f4f4
+    width: 100%
+    padding: 12px 26px 0 23px
+    input[type]
+      display: block
+      background-color: #fff
+      border-radius: 5px
+      margin-top: 10px
+      height: 50px
+      width: 100%
+      padding-left: 18px
+      padding-bottom: 0
+      outline: none
+      &:focus,
+      &:active
+        outline: none
+        border: none
+        transform: none
+      &::placeholder
+        font-family: $base-font-bold
+        font-size: 14px
+    label
+      padding-top: 17px
+      display: block
+      font-family: $base-font
+      font-size: 13px
+      &.required
+        &:after
+          content: "*"
+          color: $main-darker-color
+          font-size: 14px
+          margin-left: 2px
+
+
+    span.intro
+      display: block
+      font-family: $base-font
+      font-size: 13px
+      margin-top: 15px
+    .state
+      display: block
+      height: 100%
+      margin: 25px 0
+      input[type="radio"]
+        display: none
+        + label.radio-check
+          position: relative
+          top: 3px
+          background: #fff
+          border-radius: 50%
+          width: 15px
+          height: 15px
+          display: inline-block
+          padding: 0
+        &:checked + label.radio-check:after
+          content: ""
+          position: absolute
+          left: 5px
+          top: 5px
+          width: 5px
+          height: 5px
+          border-radius: 50%
+          background-color: #000000
+      label.radio
+        display: inline-block
+        font-size: 14px
+        font-family: $base-font-bold
+        padding: 0
+        position: relative
+        margin-left: 8px
+        margin-right: 35px
+        &:after
+          content: ""
+
+
+
+    fieldset.date
+      display: block
+      width: 100%
+      margin: 50px 0 0 0
+      padding: 0
+      border: none
+      margin-bottom: 28px
+      .select-day
+        width: 18%
+        margin-right: 6%
+      .select-month
+        width: 30%
+        margin-right: 6%
+      .select-year
+        width: 36%
+        margin-right: 0
+      .select-day,
+      .select-month,
+      .select-year
+        height: 50px
+        position: relative
+        display: inline-block
+        &:after
+          content: ""
+          position: absolute
+          top: calc(50% - 7px/2)
+          right: 13px
+          background-image: url("../images/toggle-arrow.png")
+          width: 11px
+          height: 7px
+      select
+        width: 100%
+        border: none
+        outline: none
+        display: inline-block
+        margin-right: 28px
+        font-family: $base-font-bold
+        padding: 18px 8px 15px 22px
+        border-radius: 5px
+        appearance: none
+        &.year
+          margin-right: 0
+        option
+          background-color: #fff
+          &:focus
+            outline: none
+            border: none
+
+
+    input.subscribe
+      display: none
+      + label
+        display: inline-block
+        position: relative
+        padding-left: 35px
+        font-family: $base-font
+        font-size: 14px
+        &.subscribe--last
+          margin-bottom: 20px
+        &:after
+          content: ""
+          position: absolute
+          top: 47%
+          left: 0
+          padding-left: 7px
+          width: 15px
+          height: 18px
+          background-color: #fff
+          border-radius: 3px
+          &:hover
+            cursor: pointer
+      &:checked + label:after
+        content: "✔"
+        color: #000
+
+    span.required
+      position: relative
+      top: 11px
+      display: inline-block
+      margin-left: 35px
+      font-family: $base-font
+      font-size: 12px
+      &.star
+        color: $main-light-color
+
+    button
+      width: 150px
+      height: 45px
+      margin: 30px 0
+
+
+@media only  screen and (max-width: 485px)
+  section.information
+    form
+      fieldset.date
+        select
+          width: 100%
+          margin-right: 28px
+          padding: 15px 5px 13px 10px
+          text-align: center
+          font-size: 13px
+        .select-day,
+        .select-month,
+        .select-year
+          &:after
+            content: ""
+            background-image: none
+            text-align: center
+
+
+
+
+@media only  screen and (max-width: 337px)
+  section.information
+    form
+      .state
+        label.radio.radio--last
+          margin-right: 0
+
+
+
+
+
+@media only  screen and (max-width: 442px)
+  section.information
+    text-align: center
+    form
+      span.required
+        margin: 0 0 30px 10px
+        top: 0
+

@@ -1,0 +1,58 @@
+include productMixin
+
+
+
+
+#productsSlider
+  +Product("images/products/meat.png" , "Карбонат без кости" , "Свинина" , "1100 руб" , "900 руб / " , " 0.25 кг")
+  +Product("images/products/meat-2.png" , "Край без кости" , "Свинина" , "" , "675 руб / " , " 0.25 кг")
+  +Product("images/products/cheese.png" , "'Эмменталь' 45%" , "Сыр" , "" , "750 руб / " , " 0.5 кг")
+  +Product("images/products/fish.png" , "Судак" , "Рыба" , "850 руб" , "790 руб / " , " 1 кг")
+  +Product("images/products/meat.png" , "Карбонат без кости" , "Свинина" , "1100 руб" , "900 руб / " , " 0.25 кг")
+  +Product("images/products/meat-2.png" , "Край без кости" , "Свинина" , "" , "675 руб /" , "0.25 кг")
+
+
+
+
+
+script.
+  $('#productsSlider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button"><img class="LeftArrow" src="images/arrow-left.png"></button>',
+    nextArrow: '<button type="button"><img class="RightArrow" src="images/arrow-right.png"></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false
+        }
+      },
+      {
+          breakpoint: 379,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+          }
+      }
+    ]
+  });

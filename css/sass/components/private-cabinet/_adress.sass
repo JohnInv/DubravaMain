@@ -1,0 +1,44 @@
+section.adress
+  display: none
+  padding-bottom: 1100px
+  section.addAdress
+    form.addAdress
+     display: none
+  .adress
+    display: block
+    width: 100%
+    background-color: #f4f4f4
+    padding: 30px
+    margin-bottom: 20px
+    h1.adress__name
+      font-family: $base-font
+      font-size: 24px
+      margin-bottom: 20px
+      position: relative
+      font-weight: normal
+      span
+        display: inline-block
+        position: absolute
+        right: 2%
+        top: calc(50% - 22px/2)
+        width: 22px
+        height: 22px
+        &.change
+          background-image: url("../images/pensil.png")
+          right: 13%
+        &.remove
+          background-image: url("../images/Cab-remove.png")
+        &:hover
+          cursor: pointer
+
+    hr
+      margin-top: 0
+      margin-bottom: 40px
+    .adress__info
+      span
+        display: block
+        font-family: $base-font
+        font-size: 14px
+        margin-bottom: 12px
+  button.btn
+    margin-top: 42px

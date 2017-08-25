@@ -1,0 +1,29 @@
+include reviewsMixin
+
+#reviewSlider
+  +review("images/feedback/Mihalkov.png" , "Никита Сергеевич Михалков" , "Кинорежисер , артист РСФСР" , "Отличный магазин! Только здесь и покупаю продукты для дома. Всегда свежие. Советую всем этот интернет-магазин")
+  +review("images/feedback/Mihalkov.png" , "Никита Сергеевич Михалков" , "Кинорежисер , артист РСФСР" , "Отличный магазин! Только здесь и покупаю продукты для дома. Всегда свежие. Советую всем этот интернет-магазин")
+  +review("images/feedback/Mihalkov.png" , "Никита Сергеевич Михалков" , "Кинорежисер , артист РСФСР" , "Отличный магазин! Только здесь и покупаю продукты для дома. Всегда свежие. Советую всем этот интернет-магазин")
+  +review("images/feedback/Mihalkov.png" , "Никита Сергеевич Михалков" , "Кинорежисер , артист РСФСР" , "Отличный магазин! Только здесь и покупаю продукты для дома. Всегда свежие. Советую всем этот интернет-магазин")
+
+
+script.
+  $('#reviewSlider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    centerPadding: 0,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: '<button type="button"><img class="LeftArrow" src="images/arrow-left.png"></button>',
+    nextArrow: '<button type="button"><img class="RightArrow" src="images/arrow-right.png"></button>',
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
+  });

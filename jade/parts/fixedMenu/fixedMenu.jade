@@ -1,0 +1,43 @@
+.fixed-menu#fixedMenu
+  .container
+    .row
+      .col-lg-2
+        .logo
+          img(src="images/Logo.png" alt="Дубрава Ферма" class="fixed-menu__logo")
+      .col-lg-9.col-sm-10
+        nav
+          .search-input
+            form.subscribe.form(action='#', method='POST', data-form='subscribe')
+              input(type="text" placeholder="Более 2000 товаров")
+              button.search
+          ul.fixed-menu__products-list
+            li
+              a(href="#") Мясо
+              ul.dropDown
+                li: a(href="#") Говядина
+                li: a(href="#") Свинина
+                li: a(href="#") Мороженые
+                li: a(href="#") Пельмени
+                li: a(href="#") Шашлык
+                li: a(href="#") Дичь
+                li: a(href="#") Копченье
+            li
+              a(href="#") Птица
+              ul.dropDown
+                li: a(href="#") Говядина
+                li: a(href="#") Свинина
+                li: a(href="#") Мороженые
+                li: a(href="#") Пельмени
+                li: a(href="#") Шашлык
+                li: a(href="#") Дичь
+                li: a(href="#") Копченье
+            li: a(href="#") Рыба
+            li: a(href="#") Молоко и Сыр
+            li: a(href="#") Овощи и Фрукты
+            li: a(href="#") Бакалея
+            li: a(href="#") Подарочные наборы
+
+      .col-lg-1.col-sm-2
+        .fixed-menu__icons
+          a.search: img(src="images/icon-search.png" alt="search")
+          a(href="basket.html").basket: img(src="images/basket-icon.png" alt="Basket")

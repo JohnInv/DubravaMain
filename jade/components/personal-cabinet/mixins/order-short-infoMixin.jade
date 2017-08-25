@@ -1,0 +1,14 @@
+include order-productMixin
+
+mixin shortInfo(code , date , price , payment , status)
+  .short-info
+    ul.short-info
+      li #{code}
+      li #{date}
+      li #{price}
+      li #{payment}
+      li #{status}
+      .order-products
+       +orderProduct("Карбонад без кости" , "(код: 68968988)" , "900 руб / 1кг" , "35000 руб")
+    span.showDetails
+    hr

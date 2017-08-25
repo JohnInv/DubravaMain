@@ -1,0 +1,92 @@
+.pagination
+  margin-top: 8px
+  margin-bottom: 150px
+  position: relative
+  width: 100%
+  min-height: 50px
+  button
+    min-height: 45px
+
+  button.btn.btn--next
+    display: block
+    margin-top: 5px
+    position: absolute
+    left: 1%
+  button.btn.btn--prev
+    display: block
+    margin-top: 5px
+    position: absolute
+    right: 1%
+  .pagination--info
+    position: absolute
+    display: block
+    left: 41%
+    margin-top: 17px
+
+
+    span
+      font-family: $base-font
+      font-size: 18px
+      color: $main-light-color
+      &:hover
+        cursor: pointer
+    span.info--active
+      color: #000000
+      margin-right: 16px
+      &:hover
+        cursor: default
+    span.info--last
+      border-bottom: 1px solid #cceddc
+    span.info--next
+      border-bottom: 1px solid #cceddc
+      margin-right: 15px
+    span.dots
+      color: #000000
+      margin: 0 15px 0 10px
+      &:hover
+        cursor: default
+
+
+@media only screen and (max-width: 991px)
+  .pagination
+    .pagination--info
+      left: 37%
+
+@media only screen and (max-width: 540px)
+  .pagination
+    .pagination--info
+      left: 33%
+    button.btn.btn--prev,
+    button.btn.btn--next
+      padding: 0 13px
+      font-size: 12px
+
+@media only screen and (max-width: 415px)
+  .pagination
+    .pagination--info
+      left: 30%
+
+@media only screen and (max-width: 370px)
+  .pagination
+    .pagination--info
+      button.btn.btn--prev
+        right: 4%
+      span.info--active
+        margin-right: 10px
+      span.info--next
+        margin-right: 12px
+      span.dots
+        color: #000000
+        margin: 0 8px 0 0
+
+
+
+//@media only screen and (max-width: 510px)
+//  .pagination
+//    .pagination--info,
+//    button.btn.btn--prev,
+//    button.btn.btn--next
+//      margin: 15px auto
+//      display: block
+//      position: static
+//      text-align: center

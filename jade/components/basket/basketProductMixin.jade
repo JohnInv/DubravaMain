@@ -1,0 +1,19 @@
+mixin basketProduct( Src , Name , Price , Weight  )
+  .container
+    .row
+      .col-md-6.col-xs-12
+        .basket__product
+          img(src="#{Src}" alt="#{Name}")
+          .product__info
+            span.info--name #{Name}
+            span.info--price #{Price} руб / &nbsp
+            span.info--weight #{Weight}кг
+          .product__amount
+            span.amount--weight 1 кг
+            span.amount--weight-dec &mdash;
+            span.amount--weight-inc +
+          .product__price
+            span.price 35000 руб
+          .product__remove
+            span.remove
+              i.fa.fa-times(aria-hidden='true')

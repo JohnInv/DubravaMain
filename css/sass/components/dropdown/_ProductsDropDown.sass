@@ -1,0 +1,30 @@
+nav.products-nav
+	>ul.products-nav__menu
+		>li
+   &:hover
+     color: $main-light-color
+			ul.drop-down
+				display: none
+				position: absolute
+				text-align: left
+				z-index: 1
+    &:hover
+     color: $main-light-color
+				li
+					border-bottom: 1px solid #f4f4f4
+					padding: 15px 0 15px 12px
+					width: 220%
+					transition: all 0.15s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s
+					background-color: #FFFFFF
+					&:hover
+						background-color: $main-light-color
+					&:hover a
+						color: #FFFFFF
+     &:hover nav.products-nav
+       display: none
+     a
+      color: #000000
+      font-size: 14px
+      font-family: $base-font
+      text-decoration: none
+

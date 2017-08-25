@@ -1,0 +1,50 @@
+.select
+  text-align: left
+  h4.category
+    font-size: 12px
+    font-family: $base-font-bold
+    margin-top: 50px
+  ul
+    li
+      border-bottom: 1px solid #f4f4f4
+      &:last-child
+        border-bottom: none
+      label
+        display: inline-block
+        width: 100%
+        padding: 13px 0 10px 50px
+        font-family: $base-font
+        font-size: 14px
+        text-decoration: none
+        color: #000000
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          left: 0
+          top: auto
+          width: 20px
+          height: 17px
+          padding-top: 3px
+          outline: none
+          border: 1px solid #f5f5f5
+          border-radius: 5px
+          margin-left: 10px
+      input[type="checkbox"]
+        display: none
+        &:checked + label:after
+          content: "✔"
+          text-align: center
+          color: $main-light-color
+          border: none
+          background-color: #fff
+        &:checked + label
+          background-color: $main-light-color
+          color: #ffffff
+  hr
+    border: none
+    background-color: #dddddd
+    height: 1px
+    margin: 12px 0 0
+
+

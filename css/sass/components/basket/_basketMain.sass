@@ -1,0 +1,96 @@
+main.basket
+  overflow-y: hidden
+  margin-bottom: 180px
+  .basket__product
+    width: 100%
+    min-height: 110px
+    position: relative
+    margin-bottom: 38px
+    img
+      display: inline-block
+    span
+      font-family: $base-font
+      font-size: 16px
+      position: relative
+      display: inline-block
+      &:hover
+        cursor: pointer
+    .product__remove
+      position: absolute
+      right: 10px
+      top: 11%
+      span 
+        i
+          color: #999999
+          font-size: 16px
+          &:hover
+            color: #ccc9c9
+    .product__price
+      position: absolute
+      right: 10px
+      bottom: 38%
+    .product__amount
+      display: inline-block
+      position: relative
+      top: -35px
+      left: 26px
+      span
+        background-color: #f4f4f4
+        color: $main-light-color
+        font-size: 22px
+        font-family: $base-font
+        margin-right: 3px
+        border-radius: 5px
+        width: 30px
+        height: 30px
+        text-align: center
+        &:hover
+          color: $main-darker-color
+      span.amount--weight
+        height: 30px
+        width: 65px
+        text-align: left
+        font-size: 17px
+        padding-top: 4px
+        padding-left: 10px
+        color: #000000
+      span.amount--weight-dec
+        height: 30px
+    .product__info
+      display: inline-block
+      position: relative
+      top: -35px
+      left: 18px
+      span.info--name
+        display: block
+        margin-bottom: 20px
+        border-bottom: 1px solid #ababab
+      span.info--weight
+        font-size: 12px
+
+
+
+
+@media only screen and (min-width: 991px) and (max-width: 1279px)
+  main.basket
+    .basket__product
+      width: 120%
+
+
+
+@media only screen and (max-width: 560px)
+  main.basket
+    .basket__product
+      span
+        font-size: 14px
+      .product__info
+        left: 0
+      .product__price
+        bottom: 57%
+        span.price
+          font-family: $base-font-bold
+      .product__amount
+        text-align: center
+        margin-top: 25px
+        display: block
+

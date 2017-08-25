@@ -1,0 +1,61 @@
+header
+  .header__main
+    min-width: 100%
+    .search-input
+      display: block
+      position: relative
+      padding-left: 2%
+      button.search
+        display: inline-block
+        position: absolute
+        right: 4%
+        top: 31%
+        background-image: url("../images/icon-search.png")
+        width: 23px
+        height: 23px
+      input[type="text"]
+        display: inline-block
+        min-width: 100%
+        background-color: $main-middle-color
+        padding: 15px 20px
+        color: #a3cdb2
+        border: none
+        border-radius: 7px
+        &::placeholder
+          color: #a3cdb2
+
+
+
+
+
+@media only screen and (max-width: 767px)
+  header
+    .header__main
+      .search-input
+        padding-left: 0
+
+@media only screen and (max-width: 450px)
+  header
+    .header__main
+      .search-input
+        width: 120%
+
+@media only screen and (max-width: 370px)
+  header
+    .header__main
+      .search-input
+        width: 135%
+        button.search
+          right: 21%
+        input[type="text"]
+          min-width: 75%
+          max-width: 190px
+          &::placeholder
+            font-size: 12px
+
+
+@media only screen and (max-width: 335px)
+  header
+    .header__main
+      .search-input
+        width: 150%

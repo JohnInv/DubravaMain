@@ -1,0 +1,39 @@
+section.intro.not-found
+  margin-top: 100px
+  margin-bottom: 200px
+  .intro__head-wrap
+    text-align: center
+    h1.not-found__tittle
+      font-size: 100px
+      &:before
+        background-repeat: no-repeat
+        left: 30%
+        top: 15%
+        height: 100%
+      &:after
+        background-repeat: no-repeat
+        right: 15%
+        top: 15%
+        height: 100%
+    span.not-found__text
+      display: block
+      font-family: $base-font
+      font-size: 24px
+      margin-bottom: 20px
+    span.not-found__remind
+      display: block
+      font-family: $base-font
+      font-size: 16px
+      a.main
+        display: inline-block
+        color: $main-light-color
+        text-decoration: underline
+
+
+
+@media only screen and (max-width: 991px)  
+  section.intro.not-found
+    .intro__head-wrap
+      h1.not-found__tittle
+        &:after
+          right: 5%

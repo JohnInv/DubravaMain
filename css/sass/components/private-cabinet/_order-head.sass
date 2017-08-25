@@ -1,0 +1,130 @@
+section.orders
+  padding-top: 28px
+  padding-bottom: 1100px
+  ul.order
+    position: relative
+    li
+      display: inline-block
+      font-family: $base-font-bold
+      font-size: 14px
+      text-transform: uppercase
+      padding-right: 10px
+      margin-right: 4.5%
+      background-image: url("../images/cabinet-oreder-arrow.png")
+      background-repeat: no-repeat
+      &:nth-child(1)
+        background-position: 93% 5%
+        padding-left: 15px
+      &:nth-child(2)
+        background-position: 64% 5%
+      &:nth-child(3)
+        background-position: 91% 5%
+      &:nth-child(4)
+        background-position: 39% 5%
+        margin-right:  7%
+      &:nth-child(5)
+        background-position: 92% 5%
+      span
+        display: block
+        font-family: $base-font
+        color: $main-light-color
+        font-size: 14px
+        margin-top: 34px
+        text-transform: none
+    hr
+      width: 100%
+      height: 1px
+      background-color: #ababab
+      position: absolute
+      left: 0
+      top: 30%
+
+
+@media only screen and (max-width: 991px)
+  section.orders
+    ul.order
+      li
+        margin-right: 30px
+        &:nth-child(4)
+          margin-right: 45px
+
+
+@media only screen and (max-width: 991px)
+  section.orders
+    ul.order
+      hr
+        display: none
+      li
+        display: block
+        background-image: none
+        position: relative
+        border-bottom: 1px solid #ababab
+        padding-bottom: 15px
+        min-width: 60px
+        &:first-child
+          padding-left: 0
+        &:before
+          position: absolute
+          top: 43%
+          left: 11%
+          content: "→"
+          font-size: 14px
+        span
+          margin-top: 25px
+          display: inline-block
+          padding-right: 10px
+          margin-left:  12%
+
+@media only screen and (max-width: 776px)
+  section.orders
+    ul.order
+      li
+        overflow-x: hidden
+        &:before
+          left: 15%
+        span
+          margin-left:  16%
+
+
+
+@media only screen and (max-width: 565px)
+  section.orders
+    ul.order
+      text-align: center
+      li
+        margin-right: 0
+        overflow-x: hidden
+        &:nth-child(4)
+          padding-left: 19%
+        &:before
+          left: 44%
+          span
+            margin-left:  16%
+
+
+@media only screen and (max-width: 444px)
+  section.orders
+    ul.order
+      text-align: center
+      li
+        &:nth-child(4)
+          padding: 0
+          overflow-y: hidden
+          padding: 10px 0
+          span
+            width: 50%
+            margin: 0
+            position: relative
+            right: -16%
+            top: 0
+
+
+@media only screen and (max-width: 400px)
+  section.orders
+    ul.order
+      text-align: center
+      li
+        margin-right: 0
+        overflow-x: hidden
+        &:before
+          left: 40%

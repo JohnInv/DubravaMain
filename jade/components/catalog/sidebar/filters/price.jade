@@ -1,0 +1,31 @@
+.filter
+  h2.filter__name Фильтр
+  span.filter__default Сбросить
+  hr
+  div.filter__price-slider
+    p
+      label(for="amount") Цена (руб)
+      input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold")
+      input(type="text" id="amount-2" readonly style="border:0; color:#f6931f; font-weight:bold")
+
+    #slider-range
+  hr
+
+
+
+script.
+  $(function () {
+      $("#slider-range").slider({
+          range: true,
+          min: 64,
+          max: 1230,
+          values: [64, 1230],
+          slide: function (event, ui) {
+              $("#amount").val("" + ui.values[0]);
+              $("#amount-2").val("" + ui.values[1]);
+          }
+      });
+      $("#amount").val("" + $("#slider-range").slider("values", 0));
+      $("#amount-2").val("" + $("#slider-range").slider("values", 1));
+
+  });

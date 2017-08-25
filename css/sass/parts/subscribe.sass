@@ -1,0 +1,47 @@
+section.subscribe
+  margin: 67px 0 60px
+  .subscribe--container
+    background-image: url("../images/contactForm/formBg.png")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position:  center center
+    position: relative
+    padding-top: 90px
+    padding-bottom: 80px
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: rgba(0,0,0,0.4)
+
+    .subscribe__text-wrap
+      h2
+        color: #ffffff
+        font-size: 42px
+        margin-bottom: 40px
+        line-height: 1.15
+        font-family: $second-font-italic
+      span.subscribe__text-wrap--additional
+        color: #ffffff
+        font-family: $base-font
+        font-size: 14px
+
+    .subscribeForm-wrap
+      margin-top: 10px
+      form
+        input
+          margin-bottom: 22px
+          max-width: 70%
+          min-height: 50px
+          &::placeholder
+            color: #c5c5c5
+
+
+@media only screen and (max-width: 991px)
+  .subscribe--container
+    text-align: center
+    .subscribe__text-wrap
+      margin-bottom: 20px

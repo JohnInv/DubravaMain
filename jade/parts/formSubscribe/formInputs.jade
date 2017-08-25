@@ -1,0 +1,7 @@
+.subscribeForm-wrap
+  form.subscribe.form(action='#', method='POST', data-form='subscribe')
+    //.form-group.required
+    input.subscribe__input.form-control(type='text', name='name', placeholder='Ваше имя', required)
+    input.subscribe__input.form-control(type='email', name='email', placeholder='Ваша електронная почта:', required)
+    br
+    button.btn(type='submit', name='subscribe') Подписаться

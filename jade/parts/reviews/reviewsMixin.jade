@@ -1,0 +1,8 @@
+mixin review( imgSrc , authorName , authorStatus , reviewMsg )
+  .review
+    .review__author-img
+      img(src="#{imgSrc}" alt="#{reviewMsg}")
+    .review__text
+      h2.review__authorName #{authorName}
+      h4.review__authorStatus #{authorStatus}
+      span.review__msg #{reviewMsg}

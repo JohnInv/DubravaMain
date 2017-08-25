@@ -1,0 +1,56 @@
+section.adress.section-tab#adress
+  .row
+    .col-xs-12
+      span.remind
+        i.fa.fa-exclamation-circle(aria-hidden="true")
+        | Пожалуйста, не забывайте обновлять личную информацию в случае любых изменений.
+
+  .row
+    .col-md-6.col-xs-12
+      .adress
+        h1.adress__name Мой адрес
+          span.change
+          span.remove
+        hr
+        .adress__info
+          span Vasiliy Muslayev
+          span г. Киев ул ленина д125
+          span Киев, Idaho 85648
+          span Киевская область
+          span (555) 65-44-86
+          span +3 8 (095) 446-22-10
+    .col-md-6.col-xs-12
+      .adress
+        h1.adress__name Мой адрес
+          span.change
+          span.remove
+        hr
+        .adress__info
+          span Vasiliy Muslayev
+          span г. Киев ул ленина д125
+          span Киев, Idaho 85648
+          span Киевская область
+          span (555) 65-44-86
+          span +3 8 (095) 446-22-10
+
+  .row
+    .col-xs-12
+      section.information.addAdress
+        form.addAdress.form(action='#', method='POST', data-form='subscribe')
+          label(for="name" class="required") Имя:
+          input.form-control(type='text', name='name', id="name" placeholder='', required)
+          label(for="street" class="required") Улица:
+          input.form-control(type='text', name='street', id="street" placeholder='', required)
+          label(for="city" class="required") Город:
+          input.form-control(type='text', name='city', id="city" placeholder='', required)
+          label(for="region" class="required") Область:
+          input.form-control(type='text', name='region', id="region" placeholder='', required)
+          label(for="home-phone" class="required") Домашний телефон:
+          input.form-control(type='text', name='home-phone', id="home-phone" placeholder='', required)
+          label(for="phone" class="required") Телефон:
+          input.form-control(type='text', name='phone', id="phone" placeholder='', required)
+          button.btn(type='submit', name='save') Сохранить
+        button.btn.btn-addAdress Добавить Адрес
+
+
+

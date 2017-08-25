@@ -1,0 +1,74 @@
+@import fixedMenu-search
+
+.fixed-menu
+  background-color: $main-light-color
+  z-index: 10
+  .logo
+    img
+      display: block
+      max-width: 100%
+      height: auto
+      margin-top: 13px
+  .fixed-menu__icons
+    text-align: center
+    padding: 20px 0
+    a
+      display: inline-block
+      position: relative
+      &:first-child
+        margin-right: 15px
+      &:last-child
+        top: -2px
+      &:hover
+        cursor: pointer
+  nav
+    >ul.fixed-menu__products-list
+      >li
+        display: inline-block
+        vertical-align: middle
+        padding: 25px 11px 23px 11px
+        position: relative
+        &:hover
+          background-color: #fff
+        &:hover > a
+          color: $main-darker-color
+        a
+          color: #ffffff
+          font-family:  $base-font-bold
+          font-size: 14px
+          text-transform: uppercase
+          text-decoration: none
+          transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s
+
+.fixed
+  position: fixed
+  top: 0
+  right: 0
+  width: 100%
+
+
+@media only screen and (max-width: 1279px)
+  .fixed-menu
+    .logo
+      img
+        display: none
+    nav
+      >ul.fixed-menu__products-list
+        >li
+          padding: 25px 11px 25px 11px
+          a
+            font-size: 12px
+
+
+@media only screen and (max-width: 991px)
+  .fixed-menu
+    nav
+      >ul.fixed-menu__products-list
+        >li
+          padding: 25px 3px 25px 3px
+          a
+            font-size: 12px
+
+@media only screen and (max-width: 767px)
+  .fixed-menu
+    display: none

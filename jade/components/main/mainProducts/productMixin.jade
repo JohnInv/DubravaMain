@@ -1,0 +1,10 @@
+mixin Product (imgSrc , descr , name , stock , price , weight)
+  .product
+    a(href="#")
+      img.product__img(src="#{imgSrc}" alt="#{name}")
+    a(href="#").product__descr #{descr}
+    span.product__name #{name}
+    span.product__stock #{stock}
+    h3.product__price #{price}
+    span.product__weight #{weight}
+
